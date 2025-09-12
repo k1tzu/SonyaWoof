@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SNYA — Sonya Meme Token</title>
+  <meta name="description" content="SNYA is a community-driven meme token inspired by Sonya the dog. View the contract, how to buy, tokenomics, roadmap, and official links." />
+  <meta property="og:title" content="SNYA — Sonya Meme Token" />
+  <meta property="og:description" content="SNYA is a community-driven meme token on Ethereum. Contract, how to buy, tokenomics, roadmap, and links." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/sonia_logo.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://snya.club" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="SNYA home">
+      <picture>
+        <source srcset="images/sonia_logo.webp" type="image/webp" />
+        <img src="sonia_logo.png" alt="SNYA logo" />
+      </picture>
+      <span class="brand-name">SNYA</span>
+    </a>
+    <nav class="nav" id="nav-menu" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contract">Contract</a></li>
+        <li><a href="#buy">How to Buy</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </nav>
+    <button class="menu-button" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image">
+        <img src="images/hero_dog.png" alt="Sonya the dog" />
+      </div>
+      <div class="hero-content">
+        <h1 id="hero-title">Say hello to <span class="highlight">SNYA</span></h1>
+        <p class="lead">A playful, community-driven meme token inspired by Sonya the dog. Built on Ethereum and made for fun.</p>
+        <div class="cta-buttons">
+          <a href="https://app.uniswap.org/swap?outputCurrency=0x92e7CbfAc93419BFbCF8ED2B8aF199Bc98e3f336" target="_blank" rel="noopener" class="cta-btn buy-now" data-link="uniswap">Buy on Uniswap (ETH)</a>
+          <a href="https://dexscreener.com/ethereum/0x92e7CbfAc93419BFbCF8ED2B8aF199Bc98e3f336" target="_blank" rel="noopener" class="cta-btn chart" data-link="dexscreener">View Chart</a>
+          <a href="#" target="_blank" rel="noopener" class="cta-btn buy-now" data-link="jupiter">Buy on Jupiter (SOL)</a>
+          <a href="#" target="_blank" rel="noopener" class="cta-btn chart" data-link="raydiumSol">Raydium (SOL pair)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>SNYA celebrates Sonya’s cheerful spirit. It’s a simple ERC‑20 token with no promises or expectations — just vibes, memes, and a friendly community.</p>
+      <p class="disclaimer">This is not financial advice. Cryptocurrency is volatile. Do your own research.</p>
+    </section>
+
+    <section id="contract" class="section contract">
+      <h2>Contract</h2>
+      <ul class="contract-list">
+        <li><strong>Network:</strong> Ethereum</li>
+        <li><strong>Symbol:</strong> SNYA</li>
+        <li><strong>Contract:</strong> <code id="contract-address">0x92e7CbfAc93419BFbCF8ED2B8aF199Bc98e3f336</code>
+          <button class="copy-btn" data-copy="#contract-address" aria-label="Copy contract address">Copy</button>
+        </li>
+        <li><a class="ext" href="https://etherscan.io/address/0x92e7CbfAc93419BFbCF8ED2B8aF199Bc98e3f336" target="_blank" rel="noopener" data-link="etherscan">View on Etherscan</a></li>
+      </ul>
+      <ul class="contract-list" style="margin-top:16px">
+        <li><strong>Network:</strong> Solana (Wormhole)</li>
+        <li><strong>Mint:</strong> <code id="sol-mint-address">9eT6s9DmQPtCkXc71FSuAnH9bvKaQ83pL1t1AJKWhfGu</code>
+          <button class="copy-btn" data-copy="#sol-mint-address" aria-label="Copy Solana mint">Copy</button>
+        </li>
+        <li><a class="ext" href="https://solscan.io/token/9eT6s9DmQPtCkXc71FSuAnH9bvKaQ83pL1t1AJKWhfGu" target="_blank" rel="noopener" data-link="solscan">View on Solscan</a></li>
+      </ul>
+    </section>
+
+    <section id="buy" class="section how-to">
+      <h2>How to Buy</h2>
+      <h3>Ethereum</h3>
+      <ol class="steps">
+        <li>Install a wallet (e.g., MetaMask) and switch to Ethereum Mainnet.</li>
+        <li>Get ETH for gas and swapping.</li>
+        <li>Open <a href="#" target="_blank" rel="noopener" data-link="uniswap">Uniswap</a> with the SNYA address prefilled.</li>
+        <li>Set slippage only if needed; confirm the swap.</li>
+      </ol>
+      <h3>Solana</h3>
+      <ol class="steps">
+        <li>Install Phantom (or compatible) and ensure you are on Solana Mainnet.</li>
+        <li>Get SOL for gas and swapping.</li>
+        <li>Open <a href="#" target="_blank" rel="noopener" data-link="jupiter">Jupiter</a> or <a href="#" target="_blank" rel="noopener" data-link="raydiumSol">Raydium (SOL pair)</a> or <a href="#" target="_blank" rel="noopener" data-link="raydiumUsdc">Raydium (USDC pair)</a>.</li>
+        <li>Review route, slippage, and confirm the swap.</li>
+      </ol>
+      <p class="note">Always verify the addresses before swapping.</p>
+    </section>
+
+    <section id="tokenomics" class="section tokenomics">
+      <h2>Tokenomics</h2>
+      <div class="tokens-grid">
+        <div class="card" data-tokenomics="supply">
+          <h3>Supply</h3>
+          <p>Fixed ERC‑20 supply. Refer to Etherscan for live values.</p>
+        </div>
+        <div class="card" data-tokenomics="fees">
+          <h3>Fees</h3>
+          <p>Swaps incur network and DEX fees. Verify any additional mechanics on Etherscan.</p>
+        </div>
+        <div class="card" data-tokenomics="ownership">
+          <h3>Ownership</h3>
+          <p>Community-focused. No promises of revenue, returns, or development.</p>
+        </div>
+        <div class="card" data-tokenomics="liquidity">
+          <h3>Liquidity</h3>
+          <p>Check Etherscan and DEX trackers for LP status and holders.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section roadmap">
+      <h2>Roadmap</h2>
+      <ul class="timeline" id="roadmap-list">
+        <li><strong>Phase 1:</strong> Launch website, list contract, kick off socials.</li>
+        <li><strong>Phase 2:</strong> Community events, meme contests, integrations.</li>
+        <li><strong>Phase 3:</strong> Expanded tooling, listings, and partner collabs.</li>
+      </ul>
+    </section>
+
+    <section id="links" class="section links">
+      <h2>Official Links</h2>
+      <div class="link-grid">
+        <a class="link-pill" data-link="etherscan" href="https://etherscan.io/address/0x92e7CbfAc93419BFbCF8ED2B8aF199Bc98e3f336" target="_blank" rel="noopener">Etherscan</a>
+        <a class="link-pill" data-link="uniswap" href="https://app.uniswap.org/swap?outputCurrency=0x92e7CbfAc93419BFbCF8ED2B8aF199Bc98e3f336" target="_blank" rel="noopener">Uniswap</a>
+        <a class="link-pill" data-link="dexscreener" href="https://dexscreener.com/ethereum/0x92e7CbfAc93419BFbCF8ED2B8aF199Bc98e3f336" target="_blank" rel="noopener">Dexscreener</a>
+        <a class="link-pill" data-link="solscan" href="https://solscan.io/token/9eT6s9DmQPtCkXc71FSuAnH9bvKaQ83pL1t1AJKWhfGu" target="_blank" rel="noopener">Solscan</a>
+        <a class="link-pill" data-link="jupiter" href="#" target="_blank" rel="noopener">Jupiter</a>
+        <a class="link-pill" data-link="raydiumSol" href="#" target="_blank" rel="noopener">Raydium (SOL pair)</a>
+        <a class="link-pill" data-link="raydiumUsdc" href="#" target="_blank" rel="noopener">Raydium (USDC pair)</a>
+        <a class="link-pill" data-link="birdeye" href="#" target="_blank" rel="noopener">Birdeye</a>
+        <a class="link-pill" data-link="twitter" href="https://x.com/SonyaWoof" aria-disabled="true">X (Twitter)</a>
+        <a class="link-pill" data-link="telegram" href="#" aria-disabled="true">Telegram (coming soon)</a>
+        <a class="link-pill" data-link="discord" href="#" aria-disabled="true">Discord (coming soon)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> SNYA. All rights reserved.</p>
+      <p class="small">SNYA is a meme/community token. It has no intrinsic value or expectation of financial return. No team guarantees. Use at your own risk.</p>
+      <p class="small">Contact: <a id="contact-email" href="mailto:team@snya.club">team@snya.club</a></p>
+  </div>
+  </footer>
+
+  <div id="cms-preview-badge" style="display:none;position:fixed;bottom:16px;right:16px;background:#2bdc9d;color:#0b0d11;padding:6px 10px;border-radius:10px;font-weight:700;border:1px solid #0b0d11">CMS Preview</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
