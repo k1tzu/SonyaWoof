@@ -22,8 +22,8 @@ function copyTextFromSelector(selector) {
   }).catch(() => toast('Copy failed'));
 }
 
-// Wire copy buttons
-document.querySelectorAll('.copy-btn').forEach(btn => {
+// Wire copy buttons (any element with data-copy)
+document.querySelectorAll('[data-copy]').forEach(btn => {
   btn.addEventListener('click', () => {
     const selector = btn.getAttribute('data-copy');
     if (selector) copyTextFromSelector(selector);

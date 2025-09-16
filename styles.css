@@ -4,6 +4,7 @@ html,body{height:100%}
 body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
 a{color:inherit}
 img{max-width:100%;height:auto}
+.hidden{display:none !important}
 
 .header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -40,6 +41,9 @@ img{max-width:100%;height:auto}
 .steps{padding-left:18px}
 .note{color:#b4bdc9}
 
+.mini-guide{margin-top:18px;background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:14px}
+.mini-guide h3{margin:0 0 8px}
+
 .tokens-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
 .card h3{margin:0 0 8px}
@@ -54,6 +58,11 @@ img{max-width:100%;height:auto}
 .footer{border-top:1px solid var(--border);padding:24px;background:#fff}
 .footer-inner{max-width:1000px;margin:0 auto;color:var(--muted)}
 .small{font-size:13px}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;margin:10px 0}
+details summary{cursor:pointer;font-weight:600}
+details[open]{border-color:var(--accent)}
 
 /* Media gallery */
 .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -104,6 +113,15 @@ img{max-width:100%;height:auto}
     padding: 50px;
     background-color: #ffe4e1;
     text-align: center;
+}
+
+/* Sticky mobile buy bar */
+.buy-bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:8px;justify-content:center;padding:10px;background:rgba(255,255,255,.96);backdrop-filter:saturate(140%) blur(6px);border-top:1px solid var(--border);z-index:50}
+.buy-bar__btn{flex:1;max-width:420px;text-align:center;padding:12px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);text-decoration:none;font-weight:700}
+.buy-bar__btn:first-child{background:var(--accent);color:#fff;border-color:transparent}
+
+@media (min-width: 768px){
+  .buy-bar{display:none}
 }
 
 .contact form {
